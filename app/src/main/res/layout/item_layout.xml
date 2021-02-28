@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="26sp"
+    android:layout_marginRight="26sp"
+    android:layout_marginTop="12sp"
+    android:backgroundTint="@color/dark_blue"
+    app:cardCornerRadius="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6">
+        <ImageView
+            android:id="@+id/cv_imagen"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:src="@drawable/user"
+            android:layout_marginTop="29sp"
+            android:layout_marginLeft="12sp"
+            android:layout_marginBottom="29sp"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/cv_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:textColor="@color/gray_text"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/cv_tipo_empleado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de empleado"
+                android:textSize="18sp"
+                android:textColor="@color/gray_text" />
+            <TextView
+                android:id="@+id/cv_salario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salario"
+                android:textSize="18sp"
+                android:textColor="@color/gray_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
